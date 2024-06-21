@@ -16,7 +16,7 @@ function CartItem({ item }) {
         {quantity}&times; {name}
       </p>
       <div className="flex items-center justify-between sm:gap-6">
-        <p className="text-sm font-bold">{formatCurrency(totalPrice)}</p>
+        <p className="text-sm font-bold">{formatCurrency(totalPrice * 20)}</p>
         <UpdateItemQuantity
           pizzaId={pizzaId}
           currentQuantity={currentQuanitity}
