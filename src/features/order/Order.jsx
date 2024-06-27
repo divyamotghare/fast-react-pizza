@@ -38,7 +38,7 @@ function Order() {
   const totalOrderPrice = orderPrice * 20;
   const totalPriorityPrice = priority
     ? totalOrderPrice * 0.15
-    : totalOrderPrice;
+    : 0;
   const totalPayOnDelivery = totalOrderPrice + totalPriorityPrice;
   return (
     <div className="space-y-8 px-4 py-6">
